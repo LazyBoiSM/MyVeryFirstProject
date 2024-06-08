@@ -25,7 +25,10 @@ body {
 }
 
 .intro {
-    border-right: 1px solid black
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .loginForm {
@@ -42,20 +45,41 @@ body {
     color: #f5f5f5;
 }
 
+.loginBtn {
+    background-color: #2ECC71;
+}
 
+.signupBtn {
+    border-color: #12059d;
+}
+
+.userName {
+    align-content: center;
+}
 
 
 .copy {
-    max-width: 250px;
+    max-width: 400px;
+}
+
+#copy1, #copy2 {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 .cookie {
-    background-color: #2ECC71;
+    background-color: #fff;
+    max-width: 400px;
+    max-height: 200px;
     padding: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     position: fixed;
+    top:0;
     bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
     transition: all 0.4s ease;
     opacity: 0;
     border-radius: 5px;
@@ -68,12 +92,12 @@ body {
     justify-content: space-evenly;
 }
 
-.cookieDecline , .cookieAccept {
-    max-width: 80px;
-    max-height: 40px;
-    margin-right: 10px;
-    border: 2px solid #1E2B31;
-    border-radius: 10px;
+.hoverBtn:hover {
+    border: 1px solid black;
+}
+
+.cookieAccept{
+    background-color: #2ECC71;
 }
 
 .loginForm {

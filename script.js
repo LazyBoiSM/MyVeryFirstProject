@@ -42,13 +42,21 @@ document.querySelector(".cookieAccept").addEventListener("click", () => {
   localStorage.setItem("accepted" , 1)
   cookie.style.opacity = "0";
 })
+
 addEventListener("load", () => {
-  if(localStorage.getItem("accepted") == 1) {
-      return;
-  } else {
-      cookie.style.opacity = "1";
-  }
+  setTimeout(() => {
+    localStorageFunction();
+  }, 3000)
 })
+
+const localStorageFunction = () => {
+  if(localStorage.getItem("accepted") == 1) {
+    return;
+  } else {
+    cookie.style.opacity = "1";
+    parent.style.opavity = "0.1";
+  }
+}
 
 
 

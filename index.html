@@ -17,17 +17,19 @@
             <div class="intro col-12 col-md-7 col-lg-8 p-5 ">
                 <h3>Welcome ..</h3>
                 <h6>This is the beta version of our website.So you can't signup in this time.
-                    To use our website plese copy and paste username and password to use our features..</h6>
+                    Pease use the following username and password to login.</h6>
 
                 <!-- Copy start -->
                 <div class="copy input-group mb-3">
-                    <input type="text" class="form-control" value="lazyboi" id="copy1">
+                    <div class="userName"> Username :  </div>
+                    <input type="text" class="form-control" disabled value="lazyboi" id="copy1">
                     <span class="input-group-text">
                         <i class="fa-regular fa-clipboard clipboard1 me-2"></i>
                     </span>
                 </div>
                 <div class="copy input-group mb-3">
-                    <input type="text" class="form-control" value="!hawaiiIsaland2001%" id="copy2">
+                    <div class="userName"> Password :  </div>
+                    <input type="text" class="form-control" disabled value="!hawaiiIsaland2001%" id="copy2">
                     <span class="input-group-text">
                         <i class="fa-regular fa-clipboard clipboard2 me-2"></i>
                     </span>
@@ -45,7 +47,7 @@
                 
                 <div class="loginForm">
                     <h4 class="mb-4">WELCOME BACK ..</h4>
-                    <input type="password" class="form-control mb-2"  placeholder="Enter username of email">
+                    <input type="text" class="form-control mb-2"  placeholder="Enter username of email">
                     <input type="password" class="form-control mb-2"  placeholder="Enter password">
                     <div class="checkBox mb-3">
                         <div class="form-check">
@@ -57,8 +59,8 @@
                         <div>Forgot password?</div>
                     </div>
                     <div class="signInAndUp mb-4">
-                        <button class="btn loginBtn">Sign Up</button>
-                        <button class="btn loginBtn">Login</button>
+                        <button class="btn hoverBtn signupBtn">Sign Up</button>
+                        <button class="btn hoverBtn loginBtn">Login</button>
                     </div>
                     <div class="google mb-3">
                         <img src="logo\googleLogo.png" alt="" class="googleLogo">
@@ -74,15 +76,15 @@
 
         <!-- Cookie start -->
         <div class="cookie row">
-            <div class="cookieText col-12 col-md-8 col-lg-10">
+            <div class="cookieText ">
                 Please accept cookies for the best website experience. 
                 By clicking 'Accept', you agree to the use of all cookies 
                 as described in our Cookie Statement. You can change or withdraw your 
                 cookie consent at any time.
             </div>
-            <div class="cookietBtnContainer row col-12 col-md-3 col-lg-2">
-                <a type="button" class="btn cookieDecline">Decline</a>
-                <a type="button" class="btn cookieAccept">Accept</a>
+            <div class="cookietBtnContainer row">
+                <button class="btn hoverBtn cookieDecline">Decline</button>
+                <button class="btn hoverBtn cookieAccept">Accept</button>
             </div>
         </div>
         <!-- Cookie end -->
