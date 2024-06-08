@@ -1,0 +1,46 @@
+
+.loaderContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    opacity: 1;
+    width: 200px;
+    height: 100px;
+    border-radius: 5px;
+    transition: all 0.6s ease;
+}
+
+.loading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.loader {
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    background-color: black;
+    margin: 0px 5px;
+    transition: all .5s ease;
+}
+
+.title {
+    font-size: 18px;
+    margin-top: 10px;
+    color: black;
+    text-align: center;
+}
+
+.current {
+    transform: scale(1.5);
+}

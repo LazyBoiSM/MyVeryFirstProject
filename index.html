@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Boi</title>
+    <script src="https://kit.fontawesome.com/6fe8f24b36.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loading.css">
+</head>
+<body>
+
+    <div class="parent">
+
+        <div class="row main">
+            <div class="intro col-12 col-md-7 col-lg-8 p-5 ">
+                <h3>Welcome ..</h3>
+                <h6>This is the beta version of our website.So you can't signup in this time.
+                    To use our website plese copy and paste username and password to use our features..</h6>
+
+                <!-- Copy start -->
+                <div class="copy input-group mb-3">
+                    <input type="text" class="form-control" value="lazyboi" id="copy1">
+                    <span class="input-group-text">
+                        <i class="fa-regular fa-clipboard clipboard1 me-2"></i>
+                    </span>
+                </div>
+                <div class="copy input-group mb-3">
+                    <input type="text" class="form-control" value="!hawaiiIsaland2001%" id="copy2">
+                    <span class="input-group-text">
+                        <i class="fa-regular fa-clipboard clipboard2 me-2"></i>
+                    </span>
+                </div>
+                <!-- Copy end -->
+
+
+
+            </div>
+            <div class="col-12 col-md-5 col-lg-4 p-4">
+                <div class="lazyboiLogo mb-3">
+                    <h2 class="logo"><i class="fa-solid fa-ghost me-3"></i>LAZY BOI</h2>
+                    <span>Tech and Electronic</span>
+                </div>
+                
+                <div class="loginForm">
+                    <h4 class="mb-4">WELCOME BACK ..</h4>
+                    <input type="password" class="form-control mb-2"  placeholder="Enter username of email">
+                    <input type="password" class="form-control mb-2"  placeholder="Enter password">
+                    <div class="checkBox mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                              remember me
+                            </label>
+                        </div>
+                        <div>Forgot password?</div>
+                    </div>
+                    <div class="signInAndUp mb-4">
+                        <button class="btn loginBtn">Sign Up</button>
+                        <button class="btn loginBtn">Login</button>
+                    </div>
+                    <div class="google mb-3">
+                        <img src="logo\googleLogo.png" alt="" class="googleLogo">
+                        <span class="googleText">Continue with google</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ToastAlert start -->
+        <div class="toastAlert">! copied text to clipboard</div>
+        <!-- ToastAlert end -->
+
+        <!-- Cookie start -->
+        <div class="cookie row">
+            <div class="cookieText col-12 col-md-8 col-lg-10">
+                Please accept cookies for the best website experience. 
+                By clicking 'Accept', you agree to the use of all cookies 
+                as described in our Cookie Statement. You can change or withdraw your 
+                cookie consent at any time.
+            </div>
+            <div class="cookietBtnContainer row col-12 col-md-3 col-lg-2">
+                <a type="button" class="btn cookieDecline">Decline</a>
+                <a type="button" class="btn cookieAccept">Accept</a>
+            </div>
+        </div>
+        <!-- Cookie end -->
+
+    </div>
+    <div class="loaderContainer">
+        <div class="loading">
+            <div class="loader loader1" id="1"></div>
+            <div class="loader loader2" id="2"></div>
+            <div class="loader loader3" id="3"></div>
+            <div class="loader loader4" id="4"></div>
+        </div>
+        <div class="title h3">Please wait a moment..</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="loading.js"></script>
+
+</body>
+</html>

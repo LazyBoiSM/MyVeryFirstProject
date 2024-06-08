@@ -1,0 +1,135 @@
+body {
+    background-color: #2ECC71;
+    font-family: 'Courier New', Courier, monospace;
+    color: #2c3e50;
+}
+
+.parent {
+    position: relative;
+    z-index: 1;
+    transition: all 0.6s ease;
+    
+}
+
+.lazyboiLogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.main {
+    margin: 0 auto;
+}
+
+.intro {
+    border-right: 1px solid black
+}
+
+.loginForm {
+    background-color: #3498DB;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.btn {
+    background-color: #12059d ;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    color: #f5f5f5;
+}
+
+
+
+
+.copy {
+    max-width: 250px;
+}
+.cookie {
+    background-color: #2ECC71;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    transition: all 0.4s ease;
+    opacity: 0;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.cookietBtnContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.cookieDecline , .cookieAccept {
+    max-width: 80px;
+    max-height: 40px;
+    margin-right: 10px;
+    border: 2px solid #1E2B31;
+    border-radius: 10px;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.signInAndUp {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.toastAlert {
+    background-color:#3498DB;
+    width: 250px;
+    font-size: 13px;
+    height: 40px;
+    text-align: center;
+    align-content: center;
+    position: absolute;
+    top:0;
+    right: 0;
+    left:0;
+    margin: auto;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    transform: translateY(-40px);
+
+}
+
+.checkBox {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+
+.google {
+    background-color: #fff;
+    border-radius: 30px;
+    height: 40px;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.googleText {
+    align-content: center;
+}
+
+.googleLogo {
+    height: 25px;
+}
