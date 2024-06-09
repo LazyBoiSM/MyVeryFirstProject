@@ -38,8 +38,9 @@ body {
     align-content: center;
 
 }
-.aboutUsImage {
-   max-width: 200px;
+
+.aboutUsText {
+    padding:10px;
 }
 
 
@@ -148,11 +149,11 @@ body {
 
 }
 
-.checkBox {
+.checkBoxContainer {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 
@@ -186,9 +187,11 @@ body {
 
 .create {
     font-weight: bold;
+    font-size: 15px;
     user-select: none;
     text-decoration: underline;
-    cursor: pointer;    
+    cursor: pointer;   
+    color: #12059d; 
 }
 
 .copyRight {

@@ -94,7 +94,7 @@ loginBtn.addEventListener("click", () => {
 
 const aboutUsDiv = document.querySelector(".aboutUsContainer");
 
-const aboutUsTitle = `<div class="aboutUsText col-12 col-md-12 col-lg-7">
+const aboutUsTitle = `<div class="aboutUsText col-12 col-md-12 col-lg-6">
   <h5> The Most Powerful Way to Connect with Every Audience.<h5>
   <h6>
     Whether you want to motivate or train team members,
@@ -107,6 +107,18 @@ const aboutUsTitle = `<div class="aboutUsText col-12 col-md-12 col-lg-7">
   </h6>
   </div>`;
 
-const aboutUsImage = `<img class="aboutUsImage col-12 col-md-12 col-lg-5" src="https://www.lisedunetwork.com/wp-content/uploads/2014/02/Types-of-Information.jpg" >`;
+const aboutUsTitle2 = `
+<div class="aboutUsText col-12 col-md-12 col-lg-6">
+  <h5> The Most Powerful Way to Connect with Every Audience.<h5>
+  <h6>
+    Whether you want to motivate or train team members,
+    sell products or services, or entertain and inform
+    subscribers, video does it best. And Brightcove provides
+    you with the most reliable, scalable, and secure platform
+    to deliver it on. Since 2004, our technology has helped 
+    customers all over the world harness the incredible power 
+    of video we have even won two Technology and Engineering Emmy Awards for it.
+  </h6>
+  </div>`;
 
-aboutUsDiv.innerHTML += aboutUsTitle + aboutUsImage;
+aboutUsDiv.innerHTML += aboutUsTitle + aboutUsTitle2;
