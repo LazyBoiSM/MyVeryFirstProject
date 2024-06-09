@@ -14,31 +14,29 @@ const preLoaderFunction = () => {
 }
 
 const loaderFunction = () => {
-    loaderContainer.style.opacity = "1";
-    parent.style.opacity = "0.1";
-    if (i  === loader.length -1) {
-        i = -1;
-        preLoaderFunction();
-    }
+        loaderContainer.style.opacity = "1";
+        parent.style.opacity = "0.1";
+        if (i  === loader.length -1) {
+            i = -1;
+            preLoaderFunction();
+        }
 
-    i += 1;
-    if ( i > 0) {
-        preLoaderFunction();
-    }
-    currentLoadingId = loader[i].id;
-    loader[i].style.transform = "scale(1.5)";
-    loader[i].classList.add("current");
-    console.log(currentLoadingId);
+        i += 1;
+        if ( i > 0) {
+            preLoaderFunction();
+        }
+        currentLoadingId = loader[i].id;
+        loader[i].style.transform = "scale(1.5)";
+        loader[i].classList.add("current");
 
-    y += 1;
-    if(y === 10) {
-        y = 0;
-        clearInterval(intervalId);
-        loaderContainer.style.opacity = "0";
-        parent.style.opacity = "1";
-    }
+        y += 1;
+        if(y === 10) {
+            y = 0;
+            clearInterval(intervalId);
+            loaderContainer.style.opacity = "0";
+            parent.style.opacity = "1";
+        } 
 }
-
 
 
 window.addEventListener("load", () => {
@@ -48,11 +46,4 @@ window.addEventListener("load", () => {
     },200);
 })
 
-
-
-document.querySelector(".loginBtn").addEventListener("click", () => {
-    intervalId = setInterval(() => {
-        loaderFunction();
-    },200);
-});
 

@@ -10,64 +10,71 @@
     <link rel="stylesheet" href="loading.css">
 </head>
 <body>
+    <a href="index2.html" class="page1"></a>
 
     <div class="parent">
 
         <div class="row main">
             <div class="intro col-12 col-md-7 col-lg-8 p-5 ">
-                <h3>Welcome ..</h3>
-                <h6>This is the beta version of our website.So you can't signup in this time.
+                <h3>- WELCOME -</h3>
+                <h6 class="infoText">This is the beta version of our website.So you can't signup in this time.
                     Pease use the following username and password to login.</h6>
 
                 <!-- Copy start -->
                 <div class="copy input-group mb-3">
                     <div class="userName"> Username :  </div>
                     <input type="text" class="form-control" disabled value="lazyboi" id="copy1">
-                    <span class="input-group-text">
+                    <span class="input-group-text cursorAndUserSelect">
                         <i class="fa-regular fa-clipboard clipboard1 me-2"></i>
                     </span>
                 </div>
                 <div class="copy input-group mb-3">
                     <div class="userName"> Password :  </div>
-                    <input type="text" class="form-control" disabled value="!hawaiiIsaland2001%" id="copy2">
-                    <span class="input-group-text">
+                    <input type="text" class="form-control" disabled value="hellolazyboies2001" id="copy2">
+                    <span class="input-group-text cursorAndUserSelect">
                         <i class="fa-regular fa-clipboard clipboard2 me-2"></i>
                     </span>
                 </div>
                 <!-- Copy end -->
-
-
+                 <div class="underline"></div>
+    
+                <h4 class="aboutUs row mb-3">- ABOUT US -</h4>
+                <div class="aboutUsContainer"></div>
 
             </div>
+
+             <!-- login form div start -->
             <div class="col-12 col-md-5 col-lg-4 p-4">
                 <div class="lazyboiLogo mb-3">
-                    <h2 class="logo"><i class="fa-solid fa-ghost me-3"></i>LAZY BOI</h2>
+                    <h1 class="logo"><i class="fa-solid fa-ghost me-3"></i>LAZY BOI</h1>
                     <span>Tech and Electronic</span>
                 </div>
                 
                 <div class="loginForm">
                     <h4 class="mb-4">WELCOME BACK ..</h4>
-                    <input type="text" class="form-control mb-2"  placeholder="Enter username of email">
-                    <input type="password" class="form-control mb-2"  placeholder="Enter password">
+                    <input type="text" class="form-control mb-2 userNameValitate"  placeholder="Enter username of email">
+                    <input type="password" class="form-control mb-2 passwordValitate"  placeholder="Enter password">
                     <div class="checkBox mb-3">
-                        <div class="form-check">
+                        <div class="form-check-input">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                            <label class="form-check-label" for="flexCheckChecked">
+                            <label class="form-check-label " for="flexCheckChecked">
                               remember me
                             </label>
                         </div>
-                        <div>Forgot password?</div>
+                        <div class="cursorAndUserSelect">Forgot password?</div>
                     </div>
                     <div class="signInAndUp mb-4">
-                        <button class="btn hoverBtn signupBtn">Sign Up</button>
                         <button class="btn hoverBtn loginBtn">Login</button>
                     </div>
-                    <div class="google mb-3">
+                    <div class="cursorAndUserSelect google mb-3">
                         <img src="logo\googleLogo.png" alt="" class="googleLogo">
                         <span class="googleText">Continue with google</span>
                     </div>
+                    <div class="text-primary create">New to LAZY BOI? Create one.</div>
                 </div>
-            </div>
+            </div>  
+            <!-- login form div end -->
+
         </div>
 
         <!-- ToastAlert start -->
@@ -89,6 +96,8 @@
         </div>
         <!-- Cookie end -->
 
+        <div class="copyRight">Copyright © 2024 by LazyBoi inc. All right reserved.</div>
+
     </div>
     <div class="loaderContainer">
         <div class="loading">
@@ -103,6 +112,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
     <script src="loading.js"></script>
+    <script src="avaliable.js"></script>
 
 </body>
 </html>

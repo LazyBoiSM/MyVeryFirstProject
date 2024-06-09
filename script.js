@@ -3,6 +3,8 @@ const clipboard2 = document.querySelector(".clipboard2");
 const copyText1 = document.getElementById("copy1");
 const copyText2 = document.getElementById("copy2");
 
+
+
 // copy function
 const copyFunction = (copyText) => {
   copyText.select();
@@ -15,17 +17,19 @@ const toastAlert = document.querySelector(".toastAlert");
 
 // toast alert function
 const toastAlertFunction = () => {
-  toastAlert.style.transform =  `translateY(0px)`;
+  toastAlert.style.transform =  `translateY(20px)`;
   setTimeout(() => {
-    toastAlert.style.transform = `translateY(${-(toastAlert.offsetHeight)}px)`
+    toastAlert.style.transform = `translateY(${-(toastAlert.offsetHeight)-20}px)`
   }, 3000)
 }
 
 clipboard1.addEventListener("click", () => {
+    toastAlert.textContent = "copied text!"
     copyFunction(copyText1);
     toastAlertFunction();
 })
 clipboard2.addEventListener("click", () => {
+    toastAlert.textContent = "copied text!"
     copyFunction(copyText2);
     toastAlertFunction();
 })
@@ -58,7 +62,51 @@ const localStorageFunction = () => {
   }
 }
 
+// valitation
+
+const userNameDiv = document.querySelector(".userNameValitate");
+const passwordDiv = document.querySelector(".passwordValitate");
+const loginBtn = document.querySelector(".loginBtn");
+const page1 = document.querySelector(".page1");
+
+const valitation = () => {
+  if(userNameDiv.value === "lazyboi" && passwordDiv.value === "hellolazyboies2001") {
+    toastAlert.textContent = "login success!"
+    toastAlertFunction();
+    page1.click();
+  }else {
+    toastAlert.textContent = "invalid credential!"
+    toastAlertFunction();
+  }
+}
+
+loginBtn.addEventListener("click", () => {
+  intervalId = setInterval(() => {
+    loaderFunction();
+  },  200)
+  setTimeout(() => {
+    valitation();
+  }, 2000)
+});
 
 
+//aboutUs
 
+const aboutUsDiv = document.querySelector(".aboutUsContainer");
 
+const aboutUsTitle = `<div class="aboutUsText col-12 col-md-12 col-lg-7">
+  <h5> The Most Powerful Way to Connect with Every Audience.<h5>
+  <h6>
+    Whether you want to motivate or train team members,
+    sell products or services, or entertain and inform
+    subscribers, video does it best. And Brightcove provides
+    you with the most reliable, scalable, and secure platform
+    to deliver it on. Since 2004, our technology has helped 
+    customers all over the world harness the incredible power 
+    of video we have even won two Technology and Engineering Emmy Awards for it.
+  </h6>
+  </div>`;
+
+const aboutUsImage = `<img class="aboutUsImage col-12 col-md-12 col-lg-5" src="https://www.lisedunetwork.com/wp-content/uploads/2014/02/Types-of-Information.jpg" >`;
+
+aboutUsDiv.innerHTML += aboutUsTitle + aboutUsImage;
