@@ -2,6 +2,9 @@ const clipboard1 = document.querySelector(".clipboard1");
 const clipboard2 = document.querySelector(".clipboard2");
 const copyText1 = document.getElementById("copy1");
 const copyText2 = document.getElementById("copy2");
+const createDiv = document.querySelector(".create");
+const gooleDiv = document.querySelector(".google");
+const forgetDiv = document.querySelector(".forget");
 
 
 
@@ -12,12 +15,10 @@ const copyFunction = (copyText) => {
   navigator.clipboard.writeText(copyText.value);
 }
 
-const toastAlert = document.querySelector(".toastAlert");
-
-
 // toast alert function
+const toastAlert = document.querySelector(".toastAlert");
 const toastAlertFunction = () => {
-  toastAlert.style.transform =  `translateY(20px)`;
+  toastAlert.style.transform =  `translateY(20px)`; 
   setTimeout(() => {
     toastAlert.style.transform = `translateY(${-(toastAlert.offsetHeight)-20}px)`
   }, 3000)
@@ -34,6 +35,20 @@ clipboard2.addEventListener("click", () => {
     toastAlertFunction();
 })
 
+gooleDiv.addEventListener("click", () => {
+  toastAlert.textContent = "stay tuned for update!"
+  toastAlertFunction();
+})
+
+forgetDiv.addEventListener("click", () => {
+  toastAlert.textContent = "stay tuned for update!"
+  toastAlertFunction();
+})
+
+createDiv.addEventListener("click", () => {
+  toastAlert.textContent = "stay tuned for update!"
+  toastAlertFunction();
+})
 
 // cokkie function
 const cookie = document.querySelector(".cookie");
