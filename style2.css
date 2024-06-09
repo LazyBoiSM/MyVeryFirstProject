@@ -75,3 +75,14 @@ body {
     background-color: transparent;
     border: 1px solid #12059d;
 }
+
+.copyRight {
+    text-align: center;
+    align-content: center;
+    position: absolute;
+    bottom: 0;
+    right:0;
+    left:0;
+    margin : auto;
+    font-size: 12px;
+}
